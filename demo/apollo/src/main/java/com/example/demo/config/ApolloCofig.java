@@ -15,12 +15,14 @@ import javax.annotation.Resource;
 @EnableApolloConfig
 public class ApolloCofig {
 
+    //namespcese
     @ApolloConfig("application")
     private Config anotherConfig;
 
     @ApolloConfig("Test1.mysql")
     private Config test1;
 
+    //监听器
     //config change listener for namespace application
     @ApolloConfigChangeListener("application")
     private void someOnChange(ConfigChangeEvent changeEvent) {

@@ -83,5 +83,6 @@
     <modules>
         <module>apollo</module>
         <module>nacos</module>
+        <module>mq</module>
     </modules>
 </project>
